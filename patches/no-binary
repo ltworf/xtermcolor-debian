@@ -1,0 +1,47 @@
+Description: Removes the installation of the command "xtermcolor"
+ The patch removes the command "xtermcolor" from the setup.py, so only
+ the module will be installed. The command doesn't seem to be very useful
+ and would need to be shipped in a separate binary package.
+ .
+ python-xtermcolor (1.2-1) unstable; urgency=low
+ .
+   * Initial release. (Closes: #695210)
+Author: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
+Bug-Debian: http://bugs.debian.org/695210
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- python-xtermcolor-1.2.orig/setup.py
++++ python-xtermcolor-1.2/setup.py
+@@ -5,7 +5,7 @@ distribute_setup.use_setuptools()
+ 
+ from setuptools import setup
+ 
+-version = '1.2'
++version = '1.0.4'
+ README = os.path.join(os.path.dirname(__file__), 'README')
+ long_description = open(README).read()
+ 
+@@ -18,11 +18,6 @@ setup(
+   packages=['xtermcolor'],
+   package_data={'xtermcolor': ['distribute_setup.py']},
+   install_requires=[],
+-  entry_points={
+-    'console_scripts': [
+-      'xtermcolor = xtermcolor.Main:Cli'
+-    ]
+-  },
+   license = "MIT",
+   keywords = "xterm, ANSI, xterm-256, terminal, color",
+   url = "http://github.com/broadinstitute/xtermcolor",
