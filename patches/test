@@ -1,0 +1,25 @@
+Description: Example file to show the usage of the module
+ python-xtermcolor (1.2-1) unstable; urgency=low
+ .
+   * Initial release. (Closes: #695210)
+Author: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- /dev/null
++++ python-xtermcolor-1.2/test.py
+@@ -0,0 +1,3 @@
++from xtermcolor import colorize
++
++print colorize('Red on white',0xff0000,bg=0xffffff)
