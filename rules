@@ -3,8 +3,20 @@ SHELL=sh -e
 
 %:
 	dh $@ \
-		--with python2 \
-		--with python3
+		--with python2,python3
+
+override_dh_auto_build:
+	dh_auto_build
+	set -ex; for python in $(shell py3versions -r); do \
+                $$python setup.py build; \
+        done;
+
+override_dh_auto_install:
+	dh_auto_install
+	set -ex; for python in $(shell py3versions -r); do \
+                $$python setup.py install --root=$(CURDIR)/debian/tmp --install-layout=deb; \
+        done;
+
 
 override_dh_clean:
 	dh_clean
