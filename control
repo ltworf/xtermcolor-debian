@@ -1,0 +1,15 @@
+Source: python-xtermcolor
+Section: python
+Priority: optional
+Maintainer: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
+Build-Depends: debhelper (>= 7.0.50~), python (>= 2.6.6-3~)
+Standards-Version: 3.9.3
+Homepage: https://github.com/broadinstitute/xtermcolor
+                                                                                                                                                                                                
+Package: python-xtermcolor
+Architecture: all
+Section: python
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python module to print coloured text on terminals
+ This module provides a simple API to print in color on terminals, it can
+ accept RGB and ANSI colors, and can use 256 colors.

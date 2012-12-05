@@ -1,0 +1,5 @@
+python-xtermcolor (1.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #695210)
+
+ -- Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>  Wed, 05 Dec 2012 15:15:16 +0100
