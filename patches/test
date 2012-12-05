@@ -22,4 +22,4 @@ Last-Update: <YYYY-MM-DD>
 @@ -0,0 +1,3 @@
 +from xtermcolor import colorize
 +
-+print colorize('Red on white',0xff0000,bg=0xffffff)
++print (colorize('Red on white',0xff0000,bg=0xffffff))
