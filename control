@@ -14,3 +14,14 @@ Depends: ${misc:Depends}, ${python:Depends}
 Description: Python module to print coloured text on terminals
  This module provides a simple API to print in color on terminals, it can
  accept RGB and ANSI colors, and can use 256 colors.
+ .
+ This package provides Python 2.x version of python-xtermcolor
+
+Package: python3-xtermcolor
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Python module to print coloured text on terminals
+ This module provides a simple API to print in color on terminals, it can
+ accept RGB and ANSI colors, and can use 256 colors.
+ .
+ This package provides Python 3.x version of python-xtermcolor
