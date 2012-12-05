@@ -3,7 +3,8 @@ SHELL=sh -e
 
 %:
 	dh $@ \
-		--with python2
+		--with python2 \
+		--with python3
 
 override_dh_clean:
 	dh_clean
