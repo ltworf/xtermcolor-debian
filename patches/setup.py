@@ -1,7 +1,6 @@
-Description: Removes the installation of the command "xtermcolor"
- The patch removes the command "xtermcolor" from the setup.py, so only
- the module will be installed. The command doesn't seem to be very useful
- and would need to be shipped in a separate binary package.
+Description: normal distutils setup
+ also removes the command xtermcolor which would require an extra package
+ to be shipped correctly.
  .
  python-xtermcolor (1.2-1) unstable; urgency=low
  .
@@ -24,16 +23,18 @@ Last-Update: <YYYY-MM-DD>
 
 --- python-xtermcolor-1.2.orig/setup.py
 +++ python-xtermcolor-1.2/setup.py
-@@ -5,7 +5,7 @@ distribute_setup.use_setuptools()
+@@ -1,9 +1,6 @@
+ import os
  
- from setuptools import setup
+-from xtermcolor import distribute_setup
+-distribute_setup.use_setuptools()
+-
+-from setuptools import setup
++from distutils.core import setup
  
--version = '1.2'
-+version = '1.0.4'
+ version = '1.2'
  README = os.path.join(os.path.dirname(__file__), 'README')
- long_description = open(README).read()
- 
-@@ -18,11 +18,6 @@ setup(
+@@ -18,11 +15,6 @@ setup(
    packages=['xtermcolor'],
    package_data={'xtermcolor': ['distribute_setup.py']},
    install_requires=[],
