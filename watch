@@ -1,1 +1,2 @@
+version=3
 https://github.com/broadinstitute/xtermcolor/tags .*/(\d[\d\.]+)\.tar\.gz
