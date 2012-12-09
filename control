@@ -9,7 +9,6 @@ Homepage: https://github.com/broadinstitute/xtermcolor
                                                                                                                                                                                                 
 Package: python-xtermcolor
 Architecture: all
-Section: python
 Depends: ${misc:Depends}, ${python:Depends}
 Description: Python module to print coloured text on terminals
  This module provides a simple API to print in color on terminals, it can
@@ -20,7 +19,7 @@ Description: Python module to print coloured text on terminals
 Package: python3-xtermcolor
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}
-Description: Python module to print coloured text on terminals
+Description: Python3 module to print coloured text on terminals
  This module provides a simple API to print in color on terminals, it can
  accept RGB and ANSI colors, and can use 256 colors.
  .
