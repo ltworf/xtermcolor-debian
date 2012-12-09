@@ -6,20 +6,6 @@ Description: normal distutils setup
  .
    * Initial release. (Closes: #695210)
 Author: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
-Bug-Debian: http://bugs.debian.org/695210
-
----
-The information above should follow the Patch Tagging Guidelines, please
-checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
-are templates for supplementary fields that you might want to add:
-
-Origin: <vendor|upstream|other>, <url of original patch>
-Bug: <url in upstream bugtracker>
-Bug-Debian: http://bugs.debian.org/<bugnumber>
-Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
-Forwarded: <no|not-needed|url proving that it has been forwarded>
-Reviewed-By: <name and email of someone who approved the patch>
-Last-Update: <YYYY-MM-DD>
 
 --- python-xtermcolor-1.2.orig/setup.py
 +++ python-xtermcolor-1.2/setup.py
