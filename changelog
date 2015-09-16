@@ -7,6 +7,7 @@ python-xtermcolor (1.2.1-1) unstable; urgency=low
   * Add dependency on dh-python
   * Adds minimum versions needed for python
   * Included watch file, done by bartm
+  * Added example as install, not patch
 
  -- Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>  Tue, 15 Sep 2015 17:41:28 +0200
 
