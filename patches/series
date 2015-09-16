@@ -1,2 +1,2 @@
-000002-no_distribute
-000003-setup.py
+000002-no_distribute.patch
+000003-setup.py.patch
