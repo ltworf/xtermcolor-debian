@@ -4,6 +4,9 @@ python-xtermcolor (1.2.1-1) unstable; urgency=low
   * Updated patches to work with different path
   * Dropped vt100 patch, now part of upstream
   * Bumped Standards-Version to 3.9.6
+  * Add dependency on dh-python
+  * Adds minimum versions needed for python
+  * Included watch file, done by bartm
 
  -- Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>  Tue, 15 Sep 2015 17:41:28 +0200
 
