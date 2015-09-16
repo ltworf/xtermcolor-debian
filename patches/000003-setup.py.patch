@@ -4,12 +4,6 @@ Description: normal distutils setup
  .
  Also removes the command xtermcolor which would require an extra package
  to be shipped correctly.
- .
- python-xtermcolor (1.2.1-1) unstable; urgency=low
- .
-   * New upstream release
-   * Updated patches to work with different path
-   * Dropped vt100 patch, now part of upstream
 Author: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
 
 --- python-xtermcolor-1.2.1.orig/setup.py

@@ -1,11 +1,6 @@
 Description: removes a strange setup file which would get installed
  and is useless anyway.
  .
- python-xtermcolor (1.2.1-1) unstable; urgency=low
- .
-   * New upstream release
-   * Updated patches to work with different path
-   * Dropped vt100 patch, now part of upstream
 Author: Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>
 
 ---
