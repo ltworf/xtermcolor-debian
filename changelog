@@ -1,5 +1,12 @@
+python-xtermcolor (1.2.1-2) unstable; urgency=low
+
+  * Don't hard-code the Python versions (Closes: #802864)
+
+ -- Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>  Sun, 25 Oct 2015 16:42:44 +0100
+
 python-xtermcolor (1.2.1-1) unstable; urgency=low
 
+  [ Salvo 'LtWorf' Tomaselli ]
   * New upstream release
   * Updated patches to work with different path
   * Dropped vt100 patch, now part of upstream
@@ -9,6 +16,9 @@ python-xtermcolor (1.2.1-1) unstable; urgency=low
   * Included watch file, done by bartm
   * Added example as install, not patch
   * Bump compat to 9
+
+  [ Gianfranco Costamagna ]
+  * Simplify packaging using pybuild.
 
  -- Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>  Tue, 15 Sep 2015 17:41:28 +0200
 
