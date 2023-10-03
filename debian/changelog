@@ -1,3 +1,16 @@
+python-xtermcolor (1.2.1-3) UNRELEASED; urgency=low
+
+  * Replace deprecated distutils with setuptools
+
+ -- Salvo 'LtWorf' Tomaselli <tiposchi@tiscali.it>  Wed, 04 Oct 2023 00:03:31 +0200
+
+python-xtermcolor (1.2.1-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop python2 support; Closes: #938281
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 05 Oct 2019 22:51:17 -0400
+
 python-xtermcolor (1.2.1-2) unstable; urgency=low
 
   * Don't hard-code the Python versions (Closes: #802864)
