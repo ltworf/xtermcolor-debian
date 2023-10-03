@@ -1,3 +1,4 @@
-version=3
-https://github.com/broadinstitute/xtermcolor/releases \
-.*[^n]/(?:|v|version-|release-|r|REL_|rel-|(?:python-xtermcolor|xtermcolor)(?:_|-))(\d[^\s/]*)\.(?:tar\.xz|txz|tar\.bz2|tbz2|tar\.gz|tgz)
+version=4
+
+opts=pgpmode=auto \
+https://github.com/broadinstitute/xtermcolor/tags (?:.*?/)?v?@ANY_VERSION@@ARCHIVE_EXT@
